@@ -11,7 +11,7 @@ function FormGroup() {
     <div className="container mt-3">
       <div className="row">
         <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6">
-          < className="tab-container">
+          <div className="tab-container">
             <button
               className={
                 selectedTab === "alreadyCard" ? "selectedTab" : "unSelectedTab"
@@ -28,7 +28,7 @@ function FormGroup() {
             >
               Yeni Kart
             </button>
-          </>
+          </div>
 
           <div className="row">
             <div className="col-12">
