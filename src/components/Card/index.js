@@ -1,7 +1,7 @@
 import React from "react";
 
 function Card({ cardValue }) {
-  console.log(cardValue);
+ 
 
   return (
     <div className="card border-0 ">

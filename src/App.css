@@ -229,7 +229,7 @@ input:focus {
 }
 .card {
   width: 60%;
-  height: 32vh;
+  height: 299px;
   padding: 20px 0 0 20px;
 
   display: flex;
@@ -316,4 +316,26 @@ span {
 
 .mt-10 {
   margin-top: -10px;
+}
+
+.tab-contaniner {
+  width: 210px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+}
+.unSelectedTab {
+  border: 0;
+  font-weight: 500;
+  height: 30px;
+}
+
+.selectedTab {
+  border: 0;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 7px;
+  font-weight: 500;
 }

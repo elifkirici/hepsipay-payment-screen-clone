@@ -5,18 +5,30 @@ import { useState } from "react";
 function FormGroup() {
   const [cardValue, setCardValue] = useState({});
   const [check, setcheck] = useState(false);
+  const [selectedTab, setSelectedTab] = useState("newCard");
+
   return (
     <div className="container mt-3">
       <div className="row">
         <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6">
-          <div className="row">
-            <div className="col-12">
-              <label className="switch">
-                <input type="checkbox" />
-                <span className="slider">Kayıtlı kartlarım Yeni Kart</span>
-              </label>
-            </div>
-          </div>
+          < className="tab-container">
+            <button
+              className={
+                selectedTab === "alreadyCard" ? "selectedTab" : "unSelectedTab"
+              }
+              onClick={() => setSelectedTab("alreadyCard")}
+            >
+              Kayıtlı Kartlarım
+            </button>
+            <button
+              className={
+                selectedTab === "newCard" ? "selectedTab" : "unSelectedTab"
+              }
+              onClick={() => setSelectedTab("newCard")}
+            >
+              Yeni Kart
+            </button>
+          </>
 
           <div className="row">
             <div className="col-12">
